@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venta de jabones artesanales - Mallee</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:rgb(93, 158, 103);">
+
+  <div class="Tipos">
+    <button class="Tipos1">Tipos</button>
+    <div class="Tipos1">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+
+  <!-- Barra de navegación -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#jabones">Tipos</a></li>
+        <div class="Tipos"></div>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de inicio -->
+  <section id="home" class="hero-eucalipto">
+    <div class="contenido">
+      <h1>Bienvenidos a Mallee</h1>
+      <p>Purifica tu piel, renueva tu alma.</p>
+    </div>
+  </section>
+
+  <!-- Sección de jabones -->
+  <section id="jabones" class="jabones-list">
+    <h2>Jabones Disponibles</h2>
+    <div class="jabon-grid">
+
+      <div class="jabon-card">
+        <img src="eucalipto.avif" alt="Jabón Eucalipto">
+        <h3>Jabón Eucalipto</h3>
+        <p>Precio: $12,000</p>
+        <button class="info-btn">Más Información</button>
+      </div>
+
+      <div class="jabon-card">
+        <img src="miel.webp" alt="Jabón Miel">
+        <h3>Jabón Miel</h3>
+        <p>Precio: $12,000</p>
+        <button class="info-btn">Más Información</button>
+      </div>
+
+      <div class="jabon-card">
+        <img src="sabila.jpg" alt="Jabón Sábila">
+        <h3>Jabón Sábila</h3>
+        <p>Precio: $12,000</p>
+        <button class="info-btn">Más Información</button>
+      </div>
+
+      <div class="jabon-card">
+        <img src="calendula.jpg" alt="Jabón Caléndula">
+        <h3>Jabón Caléndula</h3>
+        <p>Precio: $12,000</p>
+        <button class="info-btn">Más Información</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="contact" class="contact-form">
+    <h2>Contáctanos</h2>
+    <form action="#" method="POST">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modal-image" src="" alt="Jabón" class="modal-img">
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+      <button id="buy-button">Comprar</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mallee - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
