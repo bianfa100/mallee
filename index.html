@@ -8,27 +8,60 @@
 </head>
 <body style="background-color:rgb(93, 158, 103);">
 
-  <div class="Tipos">
-    <button class="Tipos1">Tipos</button>
-    <div class="Tipos1">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div>
-
   <!-- Barra de navegación -->
   <header>
     <nav>
       <ul>
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#jabones">Tipos</a></li>
-        <div class="Tipos"></div>
+        <li class="Inicio">
+          <button class="Inicio1">Inicio</button>
+          <ul class="Inicio-content">
+            <li><a href="#">Mision</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">politicas de Calidad</a></li>
+          </ul>
+        </li>
+        <li class="Tipos">
+          <button class="Tipos1">Tipos</button>
+          <ul class="Tipos-content">
+            <li><a href="#">jabon miel</a></li>
+            <li><a href="#">jabon calendula</a></li>
+            <li><a href="#">jabon savila</a></li>
+            <li><a href="#">jabon Eucalipto</a></li>
+          </ul>
+        </li>
+        <!-- Otros elementos del menú -->
+      </ul>
+    </nav>
+        </li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
     </nav>
   </header>
+  <section class="Mision">
+    <h2>Misión-vision-politicas de calidad</h2>
+  
+    <form id="Mision-vision-politicasForm">
+      <label for="Mision">Mision:</label>
+      <textarea id="Mision" name="Mision" rows="4" placeholder="la misión de mallee es'adaptar un espacio web donde nuestros clientes puedan encontrar un lugar confiable de compra de jabones artesanales sin químicos a muy bajos costos. Dando cabida a creaciones de nuevos jabones que revolucionen el mercado global'"></textarea>
+  
+      <label for="vision">Visión:</label>
+      <textarea id="Vision" name="Vision" rows="4" placeholder="Ser una empresa líder en productos de limpieza y cuidado personal de alta calidad, reconocida por desarrollar fórmulas naturales que restauran, protegen e hidratan profundamente la piel. Nos comprometemos a utilizar ingredientes de origen natural que ofrecen un nivel superior de hidratación, manteniendo la piel tersa, saludable y radiante, al mismo tiempo que cuidamos del medio ambiente."></textarea>
+      <label for="vision">Politicas de calidad:</label>
+      <textarea id="Politicas de calidad" name="politicas de calidad" rows="4" placeholder="Para nuestra empresa, la calidad es el principio fundamental que guía nuestro trabajo diario, por ello y para mantener e incrementar la confianza de nuestros clientes, implementamos un sistema de calidad basado en la norma ISO 9001:2015 y hemos definido una política de calidad que sirva como marco de referencia para establecer nuestros objetivos de calidad.
 
+      -Nuestros compromisos:
+      
+      ⚫Proveer soluciones y satisfacción de las necesidades de nuestros clientes en cuanto a desempeño.
+      ⚫Otorgar servicios de asesoría, entrega y capacitación adecuados a las expectativas de nuestros clientes.
+      ⚫Innovar constantemente desarrollando productos de alto desempeño para mantenimiento industrial y para procesos de manufactura.
+      ⚫Diseñar productos más amigables con el medio ambiente y más seguros para nuestro personal, clientes y usuarios finales.
+      ⚫Establecer, revisar y evaluar constantemente nuestros objetivos de calidad.
+      ⚫Asegurar un ambiente de trabajo seguro y libre de conflictos."></textarea>
+
+    </form>
+  
+    <div id="resultado" style="margin-top: 20px;"></div>
+  </section>
   <!-- Sección de inicio -->
   <section id="home" class="hero-eucalipto">
     <div class="contenido">
@@ -41,35 +74,30 @@
   <section id="jabones" class="jabones-list">
     <h2>Jabones Disponibles</h2>
     <div class="jabon-grid">
-
       <div class="jabon-card">
         <img src="eucalipto.avif" alt="Jabón Eucalipto">
         <h3>Jabón Eucalipto</h3>
         <p>Precio: $12,000</p>
         <button class="info-btn">Más Información</button>
       </div>
-
       <div class="jabon-card">
         <img src="miel.webp" alt="Jabón Miel">
         <h3>Jabón Miel</h3>
         <p>Precio: $12,000</p>
         <button class="info-btn">Más Información</button>
       </div>
-
       <div class="jabon-card">
         <img src="sabila.jpg" alt="Jabón Sábila">
         <h3>Jabón Sábila</h3>
         <p>Precio: $12,000</p>
         <button class="info-btn">Más Información</button>
       </div>
-
       <div class="jabon-card">
         <img src="calendula.jpg" alt="Jabón Caléndula">
         <h3>Jabón Caléndula</h3>
         <p>Precio: $12,000</p>
         <button class="info-btn">Más Información</button>
       </div>
-
     </div>
   </section>
 

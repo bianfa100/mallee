@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Venta de Jabones Artesanales - Mallee</title>
+  <link rel="stylesheet" href="index2.css">
+</head>
+
+<body style="background-color: rgb(93, 158, 103);">
+
+  <!-- Barra de navegación -->
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li class="dropdown">
+          <button class="dropbtn">Inicio</button>
+          <ul class="dropdown-content">
+            <li><a href="#mision">Misión</a></li>
+            <li><a href="#vision">Visión</a></li>
+            <li><a href="#politica">Política de Calidad</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <button class="dropbtn">Tipos</button>
+          <ul class="dropdown-content">
+            <li><a href="#jabon-miel">Jabón Miel</a></li>
+            <li><a href="#jabon-calendula">Jabón Caléndula</a></li>
+            <li><a href="#jabon-sabila">Jabón Sábila</a></li>
+            <li><a href="#jabon-eucalipto">Jabón Eucalipto</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de Misión, Visión y Política -->
+  <section id="info" class="info-section">
+    <h2>Misión - Visión - Política de Calidad</h2>
+
+    <div class="text-area-group">
+      <h3 id="mision">Misión</h3>
+      <textarea readonly>
+La misión de Mallee es adaptar un espacio web donde nuestros clientes puedan encontrar un lugar confiable de compra de jabones artesanales sin químicos a muy bajos costos, dando cabida a creaciones de nuevos jabones que revolucionen el mercado global.
+      </textarea>
+
+      <h3 id="vision">Visión</h3>
+      <textarea readonly>
+Ser una empresa líder en productos de limpieza y cuidado personal de alta calidad, utilizando fórmulas naturales que restauran, protegen e hidratan profundamente la piel, cuidando además el medio ambiente.
+      </textarea>
+
+      <h3 id="politica">Política de Calidad</h3>
+      <textarea readonly>
+La calidad es el principio fundamental que guía nuestro trabajo. Implementamos un sistema de calidad basado en la norma ISO 9001:2015 y definimos compromisos claros: satisfacer las necesidades de los clientes, innovar constantemente, cuidar el medio ambiente, y asegurar un ambiente laboral seguro.
+      </textarea>
+    </div>
+  </section>
+
+  <!-- Sección de inicio -->
+  <section id="home" class="hero-eucalipto">
+    <div class="contenido">
+      <h1>Bienvenidos a Mallee</h1>
+      <p>Purifica tu piel, renueva tu alma.</p>
+    </div>
+  </section>
+
+  <!-- Sección de jabones -->
+  <section id="jabones" class="jabones-list">
+    <h2>Jabones Disponibles</h2>
+    <div class="jabon-grid">
+      <div id="jabon-eucalipto" class="jabon-card">
+        <img src="eucalipto.avif" alt="Jabón Eucalipto">
+        <h3>Jabón Eucalipto</h3>
+        <p>Precio: $12,000</p>
+        <button class="info-btn">Más Información</button>
+      </div>
+      <div id="jabon-miel" class="jabon-card">
+        <img src="miel.webp" alt="Jabón Miel">
+        <h3>Jabón Miel</h3>
+        <p>Precio: $12,000</p>
+        <button class="info-btn">Más Información</button>
+      </div>
+      <div id="jabon-sabila" class="jabon-card">
+        <img src="sabila.jpg" alt="Jabón Sábila">
+        <h3>Jabón Sábila</h3>
+        <p>Precio: $12,000</p>
+        <button class="info-btn">Más Información</button>
+      </div>
+      <div id="jabon-calendula" class="jabon-card">
+        <img src="calendula.jpg" alt="Jabón Caléndula">
+        <h3>Jabón Caléndula</h3>
+        <p>Precio: $12,000</p>
+        <button class="info-btn">Más Información</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="contact" class="contact-form">
+    <h2>Contáctanos</h2>
+    <form action="#" method="POST">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mallee - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="index2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+/* NAVBAR */
+nav {
+    background-color: #2e7734;
+    padding: 10px 0;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Cambio suave en el color de fondo */
+  }
+  
+  .navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar li {
+    position: relative;
+    margin: 0 20px;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transición de color suave */
+  }
+  
+  .dropbtn:hover {
+    background-color: #4CAF50; /* Cambio de color al pasar el mouse */
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: translateY(-10px);
+  }
+  
+  .dropdown-content li a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: #3e8e41;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Desliza hacia abajo */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* HERO */
+  .hero-eucalipto {
+    background-image: url('negro.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    animation: fadeIn 1.5s ease-out; /* Animación de desvanecimiento */
+  }
+  
+  .contenido {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* SECCIONES */
+  section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* TEXTAREAS */
+  .text-area-group textarea {
+    width: 80%;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+  }
+  
+  .text-area-group textarea:focus {
+    border-color: #4CAF50; /* Resalta el borde cuando está en foco */
+  }
+  
+  /* JABONES */
+  .jabon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .jabon-card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .jabon-card:hover {
+    transform: translateY(-10px); /* Efecto al pasar el ratón */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al hacer hover */
+  }
+  
+  /* CONTACTO */
+  .contact-form form {
+    max-width: 500px;
+    margin: auto;
+    animation: fadeInUp 1s ease-out; /* Animación de entrada desde abajo */
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #45a049; /* Cambia el color al hacer hover */
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* ANIMACIONES */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
